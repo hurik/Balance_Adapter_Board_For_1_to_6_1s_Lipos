@@ -4,6 +4,9 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
+# Own
+Gerber/
+
 # Temporary files
 *.000
 *.bak
@@ -26,6 +29,5 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
-
 
 # End of https://www.gitignore.io/api/kicad

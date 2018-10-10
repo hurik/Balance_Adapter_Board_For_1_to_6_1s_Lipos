@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:1to6AdapterFor1s-cache
+LIBS:Balance_Adapter_Board_For_1_to_6_1s_Lipos-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -94,12 +94,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male JP1
 U 1 1 5BB0E5A6
-P 5900 3000
-F 0 "JP1" H 6000 2700 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 6000 2800 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5900 3000 50  0001 C CNN
-F 3 "~" H 5900 3000 50  0001 C CNN
-	1    5900 3000
+P 5500 2600
+F 0 "JP1" H 5600 2300 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 5600 2400 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 2600 50  0001 C CNN
+F 3 "~" H 5500 2600 50  0001 C CNN
+	1    5500 2600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -122,17 +122,6 @@ Wire Wire Line
 	4700 4600 4700 4300
 Wire Wire Line
 	5100 4300 5100 4600
-$Comp
-L Switch:SW_SPST SW6
-U 1 1 5BB12553
-P 2600 3200
-F 0 "SW6" V 2646 3112 50  0000 R CNN
-F 1 "SW_SPST" V 2555 3112 50  0000 R CNN
-F 2 "C&K:L101011MS02Q" H 2600 3200 50  0001 C CNN
-F 3 "" H 2600 3200 50  0001 C CNN
-	1    2600 3200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2600 4300 2300 4300
 Wire Wire Line
@@ -186,118 +175,19 @@ Wire Wire Line
 	2300 3700 5200 3700
 Wire Wire Line
 	5200 3700 5200 4600
-$Comp
-L Switch:SW_SPST SW5
-U 1 1 5BB15475
-P 3100 3200
-F 0 "SW5" V 3146 3112 50  0000 R CNN
-F 1 "SW_SPST" V 3055 3112 50  0000 R CNN
-F 2 "C&K:L101011MS02Q" H 3100 3200 50  0001 C CNN
-F 3 "" H 3100 3200 50  0001 C CNN
-	1    3100 3200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2600 3000 2600 2900
-Wire Wire Line
-	2600 2900 3100 2900
-Wire Wire Line
-	2600 4300 2600 3400
 Connection ~ 2600 4300
-Wire Wire Line
-	3100 3400 3100 4300
 Connection ~ 3100 4300
-Wire Wire Line
-	3100 3000 3100 2900
-Connection ~ 3100 2900
-Wire Wire Line
-	3100 2900 3600 2900
-$Comp
-L Switch:SW_SPST SW4
-U 1 1 5BB17ADA
-P 3600 3200
-F 0 "SW4" V 3646 3112 50  0000 R CNN
-F 1 "SW_SPST" V 3555 3112 50  0000 R CNN
-F 2 "C&K:L101011MS02Q" H 3600 3200 50  0001 C CNN
-F 3 "" H 3600 3200 50  0001 C CNN
-	1    3600 3200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_SPST SW3
-U 1 1 5BB17B49
-P 4100 3200
-F 0 "SW3" V 4146 3112 50  0000 R CNN
-F 1 "SW_SPST" V 4055 3112 50  0000 R CNN
-F 2 "C&K:L101011MS02Q" H 4100 3200 50  0001 C CNN
-F 3 "" H 4100 3200 50  0001 C CNN
-	1    4100 3200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_SPST SW2
-U 1 1 5BB17BA7
-P 4600 3200
-F 0 "SW2" V 4646 3112 50  0000 R CNN
-F 1 "SW_SPST" V 4555 3112 50  0000 R CNN
-F 2 "C&K:L101011MS02Q" H 4600 3200 50  0001 C CNN
-F 3 "" H 4600 3200 50  0001 C CNN
-	1    4600 3200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5BB17DA9
-P 5100 3200
-F 0 "SW1" V 5146 3112 50  0000 R CNN
-F 1 "SW_SPST" V 5055 3112 50  0000 R CNN
-F 2 "C&K:L101011MS02Q" H 5100 3200 50  0001 C CNN
-F 3 "" H 5100 3200 50  0001 C CNN
-	1    5100 3200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3600 3400 3600 4300
 Connection ~ 3600 4300
 Wire Wire Line
 	4100 3400 4100 4300
 Connection ~ 4100 4300
-Wire Wire Line
-	4600 3400 4600 4300
 Connection ~ 4600 4300
-Wire Wire Line
-	5100 3400 5100 4300
 Connection ~ 5100 4300
 Wire Wire Line
-	3600 3000 3600 2900
-Connection ~ 3600 2900
-Wire Wire Line
-	3600 2900 4100 2900
-Wire Wire Line
-	4100 3000 4100 2900
-Connection ~ 4100 2900
-Wire Wire Line
-	4100 2900 4600 2900
-Wire Wire Line
-	4600 3000 4600 2900
-Connection ~ 4600 2900
-Wire Wire Line
-	4600 2900 5100 2900
-Wire Wire Line
-	5100 3000 5100 2900
-Wire Wire Line
-	5100 2900 5700 2900
-Connection ~ 5100 2900
-Wire Wire Line
-	5700 3000 5600 3000
-Wire Wire Line
-	5600 3000 5600 3700
-Wire Wire Line
-	5600 3700 5200 3700
-Connection ~ 5200 3700
-Text Label 5600 2900 0    50   ~ 0
-+
-Text Label 5600 3000 0    50   ~ 0
+	5300 2600 5200 2600
+Text Label 5200 2600 0    50   ~ 0
 -
 Text Label 2600 3650 1    50   ~ 0
 +6s
@@ -311,4 +201,81 @@ Text Label 4600 3650 1    50   ~ 0
 +2s
 Text Label 5100 3650 1    50   ~ 0
 +1s
+Wire Wire Line
+	4100 3100 4100 3200
+Wire Wire Line
+	4100 3200 5100 3200
+Wire Wire Line
+	4000 3100 4000 3300
+Wire Wire Line
+	4000 3300 4600 3300
+Wire Wire Line
+	3900 3100 3900 3400
+Wire Wire Line
+	3900 3400 4100 3400
+Wire Wire Line
+	3600 3400 3800 3400
+Wire Wire Line
+	3800 3400 3800 3100
+Wire Wire Line
+	3700 3100 3700 3300
+Wire Wire Line
+	3700 3300 3100 3300
+Wire Wire Line
+	3100 3300 3100 4300
+Wire Wire Line
+	4600 3300 4600 4300
+Wire Wire Line
+	5100 3200 5100 4300
+Wire Wire Line
+	2600 3200 3600 3200
+Wire Wire Line
+	3600 3200 3600 3100
+Wire Wire Line
+	2600 3200 2600 4300
+Wire Wire Line
+	3600 2600 3600 2500
+Wire Wire Line
+	3600 2500 3700 2500
+Wire Wire Line
+	3700 2600 3700 2500
+Connection ~ 3700 2500
+Wire Wire Line
+	3700 2500 3800 2500
+Wire Wire Line
+	3800 2600 3800 2500
+Connection ~ 3800 2500
+Wire Wire Line
+	3800 2500 3900 2500
+Wire Wire Line
+	3900 2600 3900 2500
+Connection ~ 3900 2500
+Wire Wire Line
+	3900 2500 4000 2500
+Wire Wire Line
+	4000 2600 4000 2500
+Connection ~ 4000 2500
+Wire Wire Line
+	4000 2500 4100 2500
+Wire Wire Line
+	4100 2600 4100 2500
+Text Label 5200 2500 0    50   ~ 0
++
+Wire Wire Line
+	4100 2500 5300 2500
+Connection ~ 4100 2500
+Wire Wire Line
+	5200 2600 5200 3700
+Connection ~ 5200 3700
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J7
+U 1 1 5BBFA533
+P 3900 2800
+F 0 "J7" V 3904 3080 50  0000 L CNN
+F 1 "Conn_02x06_Odd_Even" V 3995 3080 50  0000 L CNN
+F 2 "" H 3900 2800 50  0001 C CNN
+F 3 "~" H 3900 2800 50  0001 C CNN
+	1    3900 2800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
