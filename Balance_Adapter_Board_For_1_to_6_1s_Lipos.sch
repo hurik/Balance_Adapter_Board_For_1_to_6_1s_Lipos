@@ -94,12 +94,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male JP1
 U 1 1 5BB0E5A6
-P 5500 2600
-F 0 "JP1" H 5600 2300 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 5600 2400 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 2600 50  0001 C CNN
-F 3 "~" H 5500 2600 50  0001 C CNN
-	1    5500 2600
+P 5500 2950
+F 0 "JP1" H 5600 2650 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 5600 2750 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 2950 50  0001 C CNN
+F 3 "~" H 5500 2950 50  0001 C CNN
+	1    5500 2950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -175,19 +175,8 @@ Wire Wire Line
 	2300 3700 5200 3700
 Wire Wire Line
 	5200 3700 5200 4600
-Connection ~ 2600 4300
-Connection ~ 3100 4300
-Wire Wire Line
-	3600 3400 3600 4300
-Connection ~ 3600 4300
-Wire Wire Line
-	4100 3400 4100 4300
 Connection ~ 4100 4300
-Connection ~ 4600 4300
-Connection ~ 5100 4300
-Wire Wire Line
-	5300 2600 5200 2600
-Text Label 5200 2600 0    50   ~ 0
+Text Label 5200 2950 0    50   ~ 0
 -
 Text Label 2600 3650 1    50   ~ 0
 +6s
@@ -201,81 +190,147 @@ Text Label 4600 3650 1    50   ~ 0
 +2s
 Text Label 5100 3650 1    50   ~ 0
 +1s
+Text Label 5200 2850 0    50   ~ 0
++
+$Comp
+L Connector_Generic:Conn_01x02 JS6
+U 1 1 5BBF4C1A
+P 2300 3200
+F 0 "JS6" H 2250 3400 50  0000 C CNN
+F 1 "Conn_01x02" H 2250 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2300 3200 50  0001 C CNN
+F 3 "~" H 2300 3200 50  0001 C CNN
+	1    2300 3200
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	4100 3100 4100 3200
+	2500 3300 2600 3300
 Wire Wire Line
-	4100 3200 5100 3200
+	2600 3300 2600 4300
+Connection ~ 2600 4300
 Wire Wire Line
-	4000 3100 4000 3300
-Wire Wire Line
-	4000 3300 4600 3300
-Wire Wire Line
-	3900 3100 3900 3400
-Wire Wire Line
-	3900 3400 4100 3400
-Wire Wire Line
-	3600 3400 3800 3400
-Wire Wire Line
-	3800 3400 3800 3100
-Wire Wire Line
-	3700 3100 3700 3300
-Wire Wire Line
-	3700 3300 3100 3300
+	3000 3300 3100 3300
 Wire Wire Line
 	3100 3300 3100 4300
+Connection ~ 3100 4300
+Wire Wire Line
+	3500 3300 3600 3300
+Wire Wire Line
+	3600 3300 3600 4300
+Connection ~ 3600 4300
+Wire Wire Line
+	4000 3300 4100 3300
+Wire Wire Line
+	4100 3300 4100 4300
+Wire Wire Line
+	4500 3300 4600 3300
 Wire Wire Line
 	4600 3300 4600 4300
+Connection ~ 4600 4300
 Wire Wire Line
-	5100 3200 5100 4300
+	5000 3300 5100 3300
 Wire Wire Line
-	2600 3200 3600 3200
+	5100 3300 5100 4300
+Connection ~ 5100 4300
 Wire Wire Line
-	3600 3200 3600 3100
+	5300 2950 5200 2950
 Wire Wire Line
-	2600 3200 2600 4300
-Wire Wire Line
-	3600 2600 3600 2500
-Wire Wire Line
-	3600 2500 3700 2500
-Wire Wire Line
-	3700 2600 3700 2500
-Connection ~ 3700 2500
-Wire Wire Line
-	3700 2500 3800 2500
-Wire Wire Line
-	3800 2600 3800 2500
-Connection ~ 3800 2500
-Wire Wire Line
-	3800 2500 3900 2500
-Wire Wire Line
-	3900 2600 3900 2500
-Connection ~ 3900 2500
-Wire Wire Line
-	3900 2500 4000 2500
-Wire Wire Line
-	4000 2600 4000 2500
-Connection ~ 4000 2500
-Wire Wire Line
-	4000 2500 4100 2500
-Wire Wire Line
-	4100 2600 4100 2500
-Text Label 5200 2500 0    50   ~ 0
-+
-Wire Wire Line
-	4100 2500 5300 2500
-Connection ~ 4100 2500
-Wire Wire Line
-	5200 2600 5200 3700
+	5200 2950 5200 3700
 Connection ~ 5200 3700
+Wire Wire Line
+	5300 2850 5100 2850
+Wire Wire Line
+	3000 3200 3100 3200
+Wire Wire Line
+	3100 3200 3100 2850
+Connection ~ 3100 2850
+Wire Wire Line
+	3100 2850 2600 2850
+Wire Wire Line
+	3500 3200 3600 3200
+Wire Wire Line
+	3600 3200 3600 2850
+Connection ~ 3600 2850
+Wire Wire Line
+	3600 2850 3100 2850
+Wire Wire Line
+	4000 3200 4100 3200
+Wire Wire Line
+	4100 3200 4100 2850
+Connection ~ 4100 2850
+Wire Wire Line
+	4100 2850 3600 2850
+Wire Wire Line
+	4500 3200 4600 3200
+Wire Wire Line
+	4600 3200 4600 2850
+Connection ~ 4600 2850
+Wire Wire Line
+	4600 2850 4100 2850
+Wire Wire Line
+	5000 3200 5100 3200
+Wire Wire Line
+	5100 3200 5100 2850
+Connection ~ 5100 2850
+Wire Wire Line
+	5100 2850 4600 2850
+Wire Wire Line
+	2500 3200 2600 3200
+Wire Wire Line
+	2600 3200 2600 2850
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J7
-U 1 1 5BBFA533
-P 3900 2800
-F 0 "J7" V 3904 3080 50  0000 L CNN
-F 1 "Conn_02x06_Odd_Even" V 3995 3080 50  0000 L CNN
-F 2 "" H 3900 2800 50  0001 C CNN
-F 3 "~" H 3900 2800 50  0001 C CNN
-	1    3900 2800
-	0    1    1    0   
+L Connector_Generic:Conn_01x02 JS5
+U 1 1 5BC07CFE
+P 2800 3200
+F 0 "JS5" H 2750 3400 50  0000 C CNN
+F 1 "Conn_01x02" H 2750 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2800 3200 50  0001 C CNN
+F 3 "~" H 2800 3200 50  0001 C CNN
+	1    2800 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 JS4
+U 1 1 5BC07D2C
+P 3300 3200
+F 0 "JS4" H 3250 3400 50  0000 C CNN
+F 1 "Conn_01x02" H 3250 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3300 3200 50  0001 C CNN
+F 3 "~" H 3300 3200 50  0001 C CNN
+	1    3300 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 JS3
+U 1 1 5BC07D5A
+P 3800 3200
+F 0 "JS3" H 3750 3400 50  0000 C CNN
+F 1 "Conn_01x02" H 3750 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3800 3200 50  0001 C CNN
+F 3 "~" H 3800 3200 50  0001 C CNN
+	1    3800 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 JS2
+U 1 1 5BC07D8A
+P 4300 3200
+F 0 "JS2" H 4250 3400 50  0000 C CNN
+F 1 "Conn_01x02" H 4250 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4300 3200 50  0001 C CNN
+F 3 "~" H 4300 3200 50  0001 C CNN
+	1    4300 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 JS1
+U 1 1 5BC07DBA
+P 4800 3200
+F 0 "JS1" H 4750 3400 50  0000 C CNN
+F 1 "Conn_01x02" H 4750 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4800 3200 50  0001 C CNN
+F 3 "~" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
